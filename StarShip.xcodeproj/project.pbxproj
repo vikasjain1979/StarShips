@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		112D567026DA7B1900CF25FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D566F26DA7B1900CF25FD /* AppDelegate.swift */; };
+		112D567226DA7B1900CF25FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D567126DA7B1900CF25FD /* SceneDelegate.swift */; };
+		112D567426DA7B1900CF25FD /* StarShipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D567326DA7B1900CF25FD /* StarShipViewController.swift */; };
+		112D567726DA7B1900CF25FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112D567526DA7B1900CF25FD /* Main.storyboard */; };
+		112D567926DA7B1900CF25FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112D567826DA7B1900CF25FD /* Assets.xcassets */; };
+		112D567C26DA7B1900CF25FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112D567A26DA7B1900CF25FD /* LaunchScreen.storyboard */; };
+		112D568726DA7B1A00CF25FD /* StarShipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D568626DA7B1A00CF25FD /* StarShipTests.swift */; };
+		112D569226DA7B3A00CF25FD /* StarShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D569126DA7B3A00CF25FD /* StarShip.swift */; };
+		112D569926DA7C9C00CF25FD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 112D569826DA7C9C00CF25FD /* Alamofire */; };
+		112D569B26DA7CEB00CF25FD /* ServiceRequestCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D569A26DA7CEB00CF25FD /* ServiceRequestCoordinator.swift */; };
+		112D569D26DA8C8E00CF25FD /* StarShips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D569C26DA8C8E00CF25FD /* StarShips.swift */; };
+		112D569F26DA8CD100CF25FD /* StartShipError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D569E26DA8CD100CF25FD /* StartShipError.swift */; };
+		112D56A126DA92A600CF25FD /* StarShipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D56A026DA92A600CF25FD /* StarShipViewModel.swift */; };
+		112D56A826DBB42000CF25FD /* StarShipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D56A626DBB42000CF25FD /* StarShipTableViewCell.swift */; };
+		112D56A926DBB42000CF25FD /* StarShipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 112D56A726DBB42000CF25FD /* StarShipTableViewCell.xib */; };
+		1146C44626DC4DC300C5303F /* StarShipDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146C44526DC4DC300C5303F /* StarShipDetailViewController.swift */; };
+		11FC4F7D26DDD7BB007F118D /* StarShipViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FC4F7C26DDD7BB007F118D /* StarShipViewModelTests.swift */; };
+		11FC4F7F26DDD86B007F118D /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FC4F7E26DDD86B007F118D /* MockService.swift */; };
+		11FC4F8126DDEAC7007F118D /* MockResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FC4F8026DDEAC7007F118D /* MockResponse.swift */; };
+		11FC4F8326DDEB9F007F118D /* swapi_dev.json in Resources */ = {isa = PBXBuildFile; fileRef = 11FC4F8226DDEB9F007F118D /* swapi_dev.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		112D568326DA7B1A00CF25FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 112D566426DA7B1800CF25FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 112D566B26DA7B1900CF25FD;
+			remoteInfo = StarShip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		112D566C26DA7B1900CF25FD /* StarShip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarShip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		112D566F26DA7B1900CF25FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		112D567126DA7B1900CF25FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		112D567326DA7B1900CF25FD /* StarShipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarShipViewController.swift; sourceTree = "<group>"; };
+		112D567626DA7B1900CF25FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		112D567826DA7B1900CF25FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		112D567B26DA7B1900CF25FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		112D567D26DA7B1900CF25FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112D568226DA7B1A00CF25FD /* StarShipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarShipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		112D568626DA7B1A00CF25FD /* StarShipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarShipTests.swift; sourceTree = "<group>"; };
+		112D568826DA7B1A00CF25FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112D569126DA7B3A00CF25FD /* StarShip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarShip.swift; sourceTree = "<group>"; };
+		112D569A26DA7CEB00CF25FD /* ServiceRequestCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequestCoordinator.swift; sourceTree = "<group>"; };
+		112D569C26DA8C8E00CF25FD /* StarShips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarShips.swift; sourceTree = "<group>"; };
+		112D569E26DA8CD100CF25FD /* StartShipError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartShipError.swift; sourceTree = "<group>"; };
+		112D56A026DA92A600CF25FD /* StarShipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarShipViewModel.swift; sourceTree = "<group>"; };
+		112D56A626DBB42000CF25FD /* StarShipTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarShipTableViewCell.swift; sourceTree = "<group>"; };
+		112D56A726DBB42000CF25FD /* StarShipTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarShipTableViewCell.xib; sourceTree = "<group>"; };
+		1146C44526DC4DC300C5303F /* StarShipDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarShipDetailViewController.swift; sourceTree = "<group>"; };
+		11FC4F7C26DDD7BB007F118D /* StarShipViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarShipViewModelTests.swift; sourceTree = "<group>"; };
+		11FC4F7E26DDD86B007F118D /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		11FC4F8026DDEAC7007F118D /* MockResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponse.swift; sourceTree = "<group>"; };
+		11FC4F8226DDEB9F007F118D /* swapi_dev.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = swapi_dev.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		112D566926DA7B1900CF25FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112D569926DA7C9C00CF25FD /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112D567F26DA7B1A00CF25FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		112D566326DA7B1800CF25FD = {
+			isa = PBXGroup;
+			children = (
+				112D566E26DA7B1900CF25FD /* StarShip */,
+				112D568526DA7B1A00CF25FD /* StarShipTests */,
+				112D566D26DA7B1900CF25FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		112D566D26DA7B1900CF25FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				112D566C26DA7B1900CF25FD /* StarShip.app */,
+				112D568226DA7B1A00CF25FD /* StarShipTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		112D566E26DA7B1900CF25FD /* StarShip */ = {
+			isa = PBXGroup;
+			children = (
+				112D569526DA7B6300CF25FD /* Model */,
+				112D569426DA7B5B00CF25FD /* ViewModel */,
+				112D569326DA7B4800CF25FD /* View */,
+				112D566F26DA7B1900CF25FD /* AppDelegate.swift */,
+				112D567126DA7B1900CF25FD /* SceneDelegate.swift */,
+				112D567826DA7B1900CF25FD /* Assets.xcassets */,
+				112D567A26DA7B1900CF25FD /* LaunchScreen.storyboard */,
+				112D567D26DA7B1900CF25FD /* Info.plist */,
+			);
+			path = StarShip;
+			sourceTree = "<group>";
+		};
+		112D568526DA7B1A00CF25FD /* StarShipTests */ = {
+			isa = PBXGroup;
+			children = (
+				112D568626DA7B1A00CF25FD /* StarShipTests.swift */,
+				112D568826DA7B1A00CF25FD /* Info.plist */,
+				11FC4F7C26DDD7BB007F118D /* StarShipViewModelTests.swift */,
+				11FC4F8226DDEB9F007F118D /* swapi_dev.json */,
+				11FC4F7E26DDD86B007F118D /* MockService.swift */,
+				11FC4F8026DDEAC7007F118D /* MockResponse.swift */,
+			);
+			path = StarShipTests;
+			sourceTree = "<group>";
+		};
+		112D569326DA7B4800CF25FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				112D567526DA7B1900CF25FD /* Main.storyboard */,
+				112D567326DA7B1900CF25FD /* StarShipViewController.swift */,
+				1146C44526DC4DC300C5303F /* StarShipDetailViewController.swift */,
+				11B7175F26DBBDB500D05ED3 /* TableViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		112D569426DA7B5B00CF25FD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				112D569626DA7B7C00CF25FD /* ServiceManager */,
+				112D56A026DA92A600CF25FD /* StarShipViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		112D569526DA7B6300CF25FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				112D569126DA7B3A00CF25FD /* StarShip.swift */,
+				112D569C26DA8C8E00CF25FD /* StarShips.swift */,
+				112D569E26DA8CD100CF25FD /* StartShipError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		112D569626DA7B7C00CF25FD /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				112D569A26DA7CEB00CF25FD /* ServiceRequestCoordinator.swift */,
+			);
+			path = ServiceManager;
+			sourceTree = "<group>";
+		};
+		11B7175F26DBBDB500D05ED3 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				112D56A726DBB42000CF25FD /* StarShipTableViewCell.xib */,
+				112D56A626DBB42000CF25FD /* StarShipTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		112D566B26DA7B1900CF25FD /* StarShip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 112D568B26DA7B1A00CF25FD /* Build configuration list for PBXNativeTarget "StarShip" */;
+			buildPhases = (
+				112D566826DA7B1900CF25FD /* Sources */,
+				112D566926DA7B1900CF25FD /* Frameworks */,
+				112D566A26DA7B1900CF25FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarShip;
+			packageProductDependencies = (
+				112D569826DA7C9C00CF25FD /* Alamofire */,
+			);
+			productName = StarShip;
+			productReference = 112D566C26DA7B1900CF25FD /* StarShip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		112D568126DA7B1A00CF25FD /* StarShipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 112D568E26DA7B1A00CF25FD /* Build configuration list for PBXNativeTarget "StarShipTests" */;
+			buildPhases = (
+				112D567E26DA7B1A00CF25FD /* Sources */,
+				112D567F26DA7B1A00CF25FD /* Frameworks */,
+				112D568026DA7B1A00CF25FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				112D568426DA7B1A00CF25FD /* PBXTargetDependency */,
+			);
+			name = StarShipTests;
+			productName = StarShipTests;
+			productReference = 112D568226DA7B1A00CF25FD /* StarShipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		112D566426DA7B1800CF25FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Jain, Vikas";
+				TargetAttributes = {
+					112D566B26DA7B1900CF25FD = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					112D568126DA7B1A00CF25FD = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 112D566B26DA7B1900CF25FD;
+					};
+				};
+			};
+			buildConfigurationList = 112D566726DA7B1800CF25FD /* Build configuration list for PBXProject "StarShip" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 112D566326DA7B1800CF25FD;
+			packageReferences = (
+				112D569726DA7C9C00CF25FD /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 112D566D26DA7B1900CF25FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				112D566B26DA7B1900CF25FD /* StarShip */,
+				112D568126DA7B1A00CF25FD /* StarShipTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		112D566A26DA7B1900CF25FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112D567C26DA7B1900CF25FD /* LaunchScreen.storyboard in Resources */,
+				112D567926DA7B1900CF25FD /* Assets.xcassets in Resources */,
+				112D567726DA7B1900CF25FD /* Main.storyboard in Resources */,
+				112D56A926DBB42000CF25FD /* StarShipTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112D568026DA7B1A00CF25FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11FC4F8326DDEB9F007F118D /* swapi_dev.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		112D566826DA7B1900CF25FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112D567426DA7B1900CF25FD /* StarShipViewController.swift in Sources */,
+				112D569226DA7B3A00CF25FD /* StarShip.swift in Sources */,
+				112D567026DA7B1900CF25FD /* AppDelegate.swift in Sources */,
+				1146C44626DC4DC300C5303F /* StarShipDetailViewController.swift in Sources */,
+				112D569D26DA8C8E00CF25FD /* StarShips.swift in Sources */,
+				112D56A126DA92A600CF25FD /* StarShipViewModel.swift in Sources */,
+				112D567226DA7B1900CF25FD /* SceneDelegate.swift in Sources */,
+				112D569F26DA8CD100CF25FD /* StartShipError.swift in Sources */,
+				112D569B26DA7CEB00CF25FD /* ServiceRequestCoordinator.swift in Sources */,
+				112D56A826DBB42000CF25FD /* StarShipTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112D567E26DA7B1A00CF25FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11FC4F7D26DDD7BB007F118D /* StarShipViewModelTests.swift in Sources */,
+				112D568726DA7B1A00CF25FD /* StarShipTests.swift in Sources */,
+				11FC4F8126DDEAC7007F118D /* MockResponse.swift in Sources */,
+				11FC4F7F26DDD86B007F118D /* MockService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		112D568426DA7B1A00CF25FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 112D566B26DA7B1900CF25FD /* StarShip */;
+			targetProxy = 112D568326DA7B1A00CF25FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		112D567526DA7B1900CF25FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				112D567626DA7B1900CF25FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		112D567A26DA7B1900CF25FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				112D567B26DA7B1900CF25FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		112D568926DA7B1A00CF25FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		112D568A26DA7B1A00CF25FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		112D568C26DA7B1A00CF25FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StarShip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codechallenge.StarShip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		112D568D26DA7B1A00CF25FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StarShip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codechallenge.StarShip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		112D568F26DA7B1A00CF25FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StarShipTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codechallenge.StarShipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarShip.app/StarShip";
+			};
+			name = Debug;
+		};
+		112D569026DA7B1A00CF25FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StarShipTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codechallenge.StarShipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarShip.app/StarShip";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		112D566726DA7B1800CF25FD /* Build configuration list for PBXProject "StarShip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				112D568926DA7B1A00CF25FD /* Debug */,
+				112D568A26DA7B1A00CF25FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		112D568B26DA7B1A00CF25FD /* Build configuration list for PBXNativeTarget "StarShip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				112D568C26DA7B1A00CF25FD /* Debug */,
+				112D568D26DA7B1A00CF25FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		112D568E26DA7B1A00CF25FD /* Build configuration list for PBXNativeTarget "StarShipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				112D568F26DA7B1A00CF25FD /* Debug */,
+				112D569026DA7B1A00CF25FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		112D569726DA7C9C00CF25FD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		112D569826DA7C9C00CF25FD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 112D569726DA7C9C00CF25FD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 112D566426DA7B1800CF25FD /* Project object */;
+}

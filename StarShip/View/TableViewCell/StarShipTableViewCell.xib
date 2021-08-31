@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="KGk-i7-Jjw" customClass="StarShipTableViewCell" customModule="StarShip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="293" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0E-Kh-I8D">
+                        <rect key="frame" x="26" y="-14" width="208" height="128"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4M9-sK-RoL">
+                                <rect key="frame" x="4" y="16" width="44.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdx-4t-kGw">
+                                <rect key="frame" x="4" y="67" width="31" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bP6-tb-FUA">
+                                <rect key="frame" x="4" y="45" width="31" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bP6-tb-FUA" firstAttribute="top" secondItem="4M9-sK-RoL" secondAttribute="bottom" constant="8" id="Tse-MF-IWq"/>
+                            <constraint firstItem="Wdx-4t-kGw" firstAttribute="top" secondItem="bP6-tb-FUA" secondAttribute="bottom" constant="8" id="XZe-hp-hHy"/>
+                            <constraint firstItem="bP6-tb-FUA" firstAttribute="leading" secondItem="t0E-Kh-I8D" secondAttribute="leading" constant="4" id="Z16-75-xkI"/>
+                            <constraint firstItem="Wdx-4t-kGw" firstAttribute="leading" secondItem="t0E-Kh-I8D" secondAttribute="leading" constant="4" id="jzG-k4-Rhj"/>
+                            <constraint firstItem="4M9-sK-RoL" firstAttribute="leading" secondItem="t0E-Kh-I8D" secondAttribute="leading" constant="4" id="pZn-Fx-AmS"/>
+                            <constraint firstItem="4M9-sK-RoL" firstAttribute="top" secondItem="t0E-Kh-I8D" secondAttribute="top" constant="16" id="qTc-f9-DZD"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOM-Jl-ClF">
+                        <rect key="frame" x="242" y="32" width="36" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="C6G-8w-ly0"/>
+                            <constraint firstAttribute="width" constant="36" id="Xmj-rA-1Iz"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="fav_icon_selected"/>
+                        <connections>
+                            <action selector="btnFavorite_Click:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3J0-qM-Dpe"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="t0E-Kh-I8D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="02e-aG-Cdz"/>
+                    <constraint firstItem="t0E-Kh-I8D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-69" id="85k-dy-0oX"/>
+                    <constraint firstItem="t0E-Kh-I8D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="VVA-kn-IqH"/>
+                    <constraint firstItem="DOM-Jl-ClF" firstAttribute="leading" secondItem="t0E-Kh-I8D" secondAttribute="trailing" constant="8" id="Wr5-ch-2zg"/>
+                    <constraint firstAttribute="bottom" secondItem="DOM-Jl-ClF" secondAttribute="bottom" constant="32" id="Z5X-Qe-AS9"/>
+                    <constraint firstAttribute="trailing" secondItem="DOM-Jl-ClF" secondAttribute="trailing" constant="15" id="bU7-m9-rHr"/>
+                    <constraint firstItem="DOM-Jl-ClF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="32" id="eDg-Lw-acA"/>
+                    <constraint firstItem="t0E-Kh-I8D" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fpE-Ur-Igv"/>
+                    <constraint firstItem="t0E-Kh-I8D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="n3L-ni-edF"/>
+                    <constraint firstAttribute="bottom" secondItem="t0E-Kh-I8D" secondAttribute="bottom" id="rbU-ko-EVc"/>
+                </constraints>
+                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnFavorite" destination="DOM-Jl-ClF" id="1jq-Zn-7DO"/>
+                <outlet property="shipCost" destination="bP6-tb-FUA" id="GBd-Jc-Ou6"/>
+                <outlet property="shipName" destination="4M9-sK-RoL" id="dfg-aO-cDa"/>
+                <outlet property="shipRating" destination="Wdx-4t-kGw" id="uyV-gZ-xpn"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="fav_icon_selected" width="112.5" height="112.5"/>
+    </resources>
+</document>
