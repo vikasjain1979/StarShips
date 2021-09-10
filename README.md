@@ -34,21 +34,33 @@ But comsidering the scalability, flexibility and clean architecture I opted for 
 
 
 •	For API calls I have integrated with Alamofire(v5.4.3) using SPM
+
 •	Unit Tests: Added unit tests for all public methods of ViewModel
+
 •	Error Handling: Handling error for any API failures using the StarShipError object 
+
 •	Sorting: Have added options to sort by name and cost as of now based on properties shown on master view. 
 
 
 # NFRs
 •	Device orientation support
+
 o	Supports both portrait and landscape mode
+
 •	Device Size check
+
 o	Tested on iPhone 8 and iPhone 12
+
 o	Have used constraints so should be good on other devices as well
+
 o	Runs on iPad as well
+
 •	Supported OS Version
+
 o	iOS 13 and above 
+
 •	Accessibility
+
 o	Supports and tested for voiceover accessibility
 
 
