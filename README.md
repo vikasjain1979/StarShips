@@ -7,15 +7,30 @@
 ⁃	Detail page to show detail of each starship
 
 ⁃	Favourite the starship from Master/Detail page
+
 ⁃	List the favourite items
+
 ⁃	Sorting options
+
 ⁃	Navigation
+
 ⁃	Error handling
 
 
 
 # MVVM architecture
 For this application, I have used the MVVM. For this application even MVC would have been good as its very small and very less integration points.
+But comsidering the scalability, flexibility and clean architecture I opted for MVVM.
+    * View/Controller
+    * Master view : Load the starships detail with 2 properties + Sorting + Favorites tab
+    * Detail View 
+    * View Model
+      * GetStarshipData
+      * ManageFavorite
+      * IsFavorite
+    
+  * Model
+    * Codable Data Objects
 
 
 •	For API calls I have integrated with Alamofire(v5.4.3) using SPM
