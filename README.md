@@ -21,16 +21,19 @@
 # MVVM architecture
 For this application, I have used the MVVM. For this application even MVC would have been good as its very small and very less integration points.
 But comsidering the scalability, flexibility and clean architecture I opted for MVVM.
-    * View/Controller
-    * Master view : Load the starships detail with 2 properties + Sorting + Favorites tab
-    * Detail View 
-    * View Model
-      * GetStarshipData
-      * ManageFavorite
-      * IsFavorite
+
+# View/Controller
+   * Master view : Load the starships detail with 2 properties + Sorting + Favorites tab
+   * Detail View 
+
+# View Model
+   * GetStarshipData
+   * ManageFavorite
+   * IsFavorite
     
-  * Model
-    * Codable Data Objects
+# Model
+   * Codable Data Objects
+   * Error object
 
 
 •	For API calls I have integrated with Alamofire(v5.4.3) using SPM
@@ -43,24 +46,19 @@ But comsidering the scalability, flexibility and clean architecture I opted for 
 
 
 # NFRs
-•	Device orientation support
 
-o	Supports both portrait and landscape mode
+- Device orientation support
+  * Supports both portrait and landscape mode
 
-•	Device Size check
+- Device Size check
+   * Tested on iPhone 8 and iPhone 12
+   * Have used constraints so should be good on other devices as well
+   * Runs on iPad as well
 
-o	Tested on iPhone 8 and iPhone 12
+- Supported OS Version
+   * iOS 13 and above 
 
-o	Have used constraints so should be good on other devices as well
-
-o	Runs on iPad as well
-
-•	Supported OS Version
-
-o	iOS 13 and above 
-
-•	Accessibility
-
-o	Supports and tested for voiceover accessibility
+- Accessibility
+   * Supports and tested for voiceover accessibility
 
 
