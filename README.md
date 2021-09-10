@@ -3,7 +3,9 @@
 # Requirements
 
 ⁃	Master page with all starship details + 2 additional properties
+
 ⁃	Detail page to show detail of each starship
+
 ⁃	Favourite the starship from Master/Detail page
 ⁃	List the favourite items
 ⁃	Sorting options
