@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 // Delegate to handle the communication back to view controller with the star ship array.
-protocol StarShipViewModelDelegate {
+protocol StarShipViewModelDelegate: NSObject {
     // Callback when API data fetch is successful
     func starShipInfoDelegate(_ value: StarShips)
     
@@ -26,7 +26,7 @@ public class StarShipViewModel {
     var favoriteStarShips: [StarShipModel]
     let serviceRequestCoordinator: ServiceRequestPerforming
     
-    var viewModelDelegate: StarShipViewModelDelegate?
+    weak var viewModelDelegate: StarShipViewModelDelegate?
     
     // MARK: - Initializer
     init(serviceCoordinator: ServiceRequestPerforming = ServiceRequestCoordinator(),
